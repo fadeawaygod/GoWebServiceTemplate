@@ -1,4 +1,4 @@
-package lib
+package mylib
 
 // SayHello hi
 func SayHello() string {
