@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"gowebservicetemplate/lib"
 	"log"
 	"net/http"
 	"strings"
@@ -14,7 +15,7 @@ func sayHelloWorld(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("key:", k)
 		fmt.Println("val:", strings.Join(v, ""))
 	}
-	fmt.Fprintf(w, "Hello World!")
+	fmt.Fprintf(w, lib.SayHello())
 }
 
 func main() {
